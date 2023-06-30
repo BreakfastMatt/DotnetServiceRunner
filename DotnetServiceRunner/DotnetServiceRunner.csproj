@@ -48,4 +48,9 @@
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
+  <!-- Ensures the config.json file gets redirected on build -->
+  <ItemGroup>
+    <AdditionalFiles Include="config.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
