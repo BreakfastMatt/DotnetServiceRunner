@@ -3,12 +3,24 @@
     x:Class="DotnetServiceRunner.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:DotnetServiceRunner"
+    xmlns:Pages="clr-namespace:DotnetServiceRunner.Pages"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate Pages:MainPage}"
+        Route="MainPage" />-->
+
+    <TabBar>
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate Pages:MainPage}" />
+        <ShellContent
+            Title="Notes"
+            ContentTemplate="{DataTemplate Pages:Notes}" />
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate Pages:About}" />
+    </TabBar>
 
 </Shell>

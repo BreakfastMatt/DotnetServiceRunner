@@ -1,4 +1,4 @@
-﻿namespace DotnetServiceRunner;
+﻿namespace DotnetServiceRunner.Pages;
 
 public partial class MainPage : ContentPage
 {
